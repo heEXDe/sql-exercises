@@ -12,8 +12,27 @@ exercise: https://www.codewars.com/kata/56dec885c54a926dcd001095
 select (number * -1) as "res"
 from opposite;
 ```
+***
 exercise: https://www.codewars.com/kata/53369039d7ab3ac506000467/sql
 ```
 select bool, CASE WHEN bool = true THEN 'Yes' ELSE 'No' END AS res
 from booltoword;
+```
+***
+exercise: https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/sql
+```
+select s, n, repeat(s, n) as "res"
+from repeatstr;
+```
+***
+exercise: https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
+```
+SELECT s, (SUBSTRING(s, 2, LENGTH(s) - 2)) AS res
+FROM removechar;
+```
+***
+exercise: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+```
+select n, (n * (1+n)/2) as res
+from kata;
 ```
