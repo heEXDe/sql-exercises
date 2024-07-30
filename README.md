@@ -36,3 +36,19 @@ exercise: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 select n, (n * (1+n)/2) as res
 from kata;
 ```
+***
+exercise: https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+```
+select x, replace(x, ' ', '') as res from nospace;
+```
+***
+exercise: https://www.codewars.com/kata/55a70521798b14d4750000a4
+```
+select format('Hello, %s how are you doing today?', name) as greeting 
+from person;
+```
+***
+exercise: https://www.codewars.com/kata/582cb0224e56e068d800003c
+```
+SELECT *, FLOOR(hours * 0.5) as liters FROM cycling;
+```
