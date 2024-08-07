@@ -52,3 +52,37 @@ exercise: https://www.codewars.com/kata/582cb0224e56e068d800003c
 ```
 SELECT *, FLOOR(hours * 0.5) as liters FROM cycling;
 ```
+***
+exercise: https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+```
+SELECT (
+CASE 
+WHEN yr % 100 > 0 THEN yr / 100 + 1 
+WHEN yr % 100 = 0 THEN yr / 100 
+END  
+) AS century 
+FROM years;
+```
+***
+exercise: https://www.codewars.com/kata/555086d53eac039a2a000083
+```
+select flower1, flower2, (
+case
+  when (flower1 % 2 = 0 and flower2 % 2 = 1) then true
+  when (flower2 % 2 = 0 and flower1 % 2 = 1) then true
+  else false
+  end
+) as res
+from love;
+```
+***
+exercise: https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd
+```
+SELECT n, m, (
+CASE
+ WHEN n<0 OR m<0 THEN 0
+ ELSE n * m
+END
+) as res
+FROM paperwork;
+```
