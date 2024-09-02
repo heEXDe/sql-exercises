@@ -107,3 +107,28 @@ case
 ) as res 
 from multiplication;
 ```
+exercise: https://www.codewars.com/kata/57eae65a4321032ce000002d
+```
+SELECT x, (REGEXP_REPLACE(REGEXP_REPLACE(x, '[0-4]', '0', 'g'), '[5-9]', '1', 'g')) AS res
+FROM fakebin;
+```
+***
+exercise: https://www.codewars.com/kata/5861d28f124b35723e00005e
+```
+SELECT 
+        distance_to_pump,
+        mpg,
+        fuel_left,
+        CASE WHEN(distance_to_pump - (mpg * fuel_left)) <= 0 THEN true
+        ELSE false END AS res
+FROM zerofuel;
+```
+***
+exercise: https://www.codewars.com/kata/5513795bd3fafb56c200049e
+```
+select x, n, (
+select array_agg(i * x) from generate_series(1, n) i
+) as res
+from counter
+order by x asc, n asc;
+```
