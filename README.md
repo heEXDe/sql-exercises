@@ -132,3 +132,27 @@ select array_agg(i * x) from generate_series(1, n) i
 from counter
 order by x asc, n asc;
 ```
+***
+exercise: https://www.codewars.com/kata/5545f109004975ea66000086
+```
+SELECT id, (
+  CASE 
+  WHEN n % x = 0 AND n % y = 0 THEN true ELSE false END
+) AS res FROM kata;
+```
+***
+exercise: https://www.codewars.com/kata/5ce9c1000bab0b001134f5af/sql
+```
+SELECT month, (
+CASE
+WHEN month <= 3 THEN 1 
+WHEN month <= 6 THEN 2
+WHEN month <= 9 THEN 3
+ELSE 4 END
+) AS res FROM quarterof;
+```
+***
+exercise: https://www.codewars.com/kata/57a0885cbb9944e24c00008e/sql
+```
+SELECT s, (REGEXP_REPLACE(s, '!', '', 'g')) AS res FROM removeexclamationmarks;
+```
