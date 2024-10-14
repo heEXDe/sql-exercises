@@ -156,3 +156,22 @@ exercise: https://www.codewars.com/kata/57a0885cbb9944e24c00008e/sql
 ```
 SELECT s, (REGEXP_REPLACE(s, '!', '', 'g')) AS res FROM removeexclamationmarks;
 ```
+***
+exercise: https://www.codewars.com/kata/5a023c426975981341000014
+```
+select a, b, (180 - a - b) as res from otherangle;
+```
+***
+exercise: https://www.codewars.com/kata/55f73be6e12baaa5900000d4
+```
+SELECT (la_liga_goals + copa_del_rey_goals + champions_league_goals) AS res FROM goals;
+```
+***
+exercise: https://www.codewars.com/kata/55cbc3586671f6aa070000fb
+```
+SELECT id, (
+CASE 
+  WHEN base % factor = 0 THEN true ELSE false 
+  END
+) AS res FROM kata;
+```
