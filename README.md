@@ -175,3 +175,17 @@ CASE
   END
 ) AS res FROM kata;
 ```
+***
+exercise: https://www.codewars.com/kata/523b623152af8a30c6000027
+```
+SELECT n, CAST(POWER(n, 2) AS INTEGER) AS res FROM square;
+```
+***
+exercise: https://www.codewars.com/kata/54ff3102c1bad923760001f3
+```
+SELECT 
+    str,
+    CHAR_LENGTH(REGEXP_REPLACE(str, '[^aeiou]', '', 'g')) AS res
+FROM 
+    getcount;
+```
