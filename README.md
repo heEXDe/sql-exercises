@@ -194,3 +194,8 @@ exercise: https://www.codewars.com/kata/52fba66badcd10859f00097e/sql
 ```
 SELECT str, REGEXP_REPLACE(str, '[aieou]', '', 'ig') AS res FROM disemvowel;
 ```
+***
+exercise: https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/sql
+```
+SELECT CAST(n * (2 * (n + POWER((n-1), 2)) + (n-1) * 2) / 2 AS INTEGER) AS res FROM nums;
+```
